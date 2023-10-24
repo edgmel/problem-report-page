@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I spotted some problem in your page!</title>
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            background-image: url('bug-patterns.png'); /* Background image with bug patterns */
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .form-row {
+            margin-bottom: 25px;
+        }
+
+        .form-label {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-button {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            background-color: #007AFF;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .form-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="form-title">I spotted some problem in your page!</h1>
+        <form>
+            <div class="form-row">
+                <label class="form-label" for="name">Name:</label>
+                <input class="form-input" type="text" id="name" name="name">
+                <label class="form-label" for="surname">Surname:</label>
+                <input class="form-input" type="text" id="surname" name="surname">
+            </div>
+            <div class="form-row">
+                <label class="form-label" for="problem-description">Problem Description (Max 3000 characters):</label>
+                <textarea class="form-textarea" id="problem-description" name="problem-description" rows="4" maxlength="3000"></textarea>
+            </div>
+            <div class="form-row">
+                <label class="form-label">Attachments:</label>
+                <input class="form-input" type="file" id="upload-image" name="upload-image">
+                <input class="form-input" type="file" id="upload-video" name="upload-video">
+            </div>
+            <div class="form-row">
+                <label class="form-label" for="email">My Email:</label>
+                <input class="form-input" type="email" id="email" name="email">
+            </div>
+            <div class="form-row">
+                <label class="form-label" for="send-to-email">I will send this report to (add email):</label>
+                <input class="form-input" type="email" id="send-to-email" name="send-to-email">
+            </div>
+            <div class="form-buttons">
+                <input class="form-button" type="submit" value="Submit">
+                <input class="form-button" type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
